@@ -134,7 +134,7 @@ function injectBooksToDOM(booksArr) {
   let ul = document.createElement('ul');
   root.appendChild(ul);
   booksArr.forEach((element, index, arr) => {
-    console.log(arr)
+    
     let li = document.createElement('li');
     let p = document.createElement("p");
     p.innerHTML = `book name ; ${arr[index].bookName} and author ; ${arr[index].author}
