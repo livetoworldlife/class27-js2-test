@@ -13,21 +13,28 @@
     Expected output:
     'Noer is 28 and works as an Education Director'
 */
-/*
-function logObj(obj) {
-  let name = obj.name;
-  let age = obj.age;
-  let job = obj.job;
-  return `${name} is ${age} and works as an ${job}!`;
 
+function logObj(obj) {
+  let concatString, name, age, job = '';
+  for (let [key, value] of Object.entries(obj)) {
+    if (key === 'name') {
+      name = value;
+    } else if (key === 'age') {
+      age = value;
+    } else {
+      job = value;
+    }
+  }
+  concatString = `${name} is ${age} and works as an ${job}!`;
+  console.log(concatString);
+  return concatString;
 }
 const newObj = {
-  name: "Ersin",
-  age: 33,
-  job: "web developer"
+  name: "Noer",
+  age: 28,
+  job: "Education Director"
 };
-console.log(logObj(newObj));
-*/
+logObj(newObj);
 
 /* 2. Create a function, named logNumbers, that:
       - Takes 2 arguments: a start number and an end number
