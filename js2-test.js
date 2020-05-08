@@ -1,5 +1,5 @@
-// Name:
-// Class:
+// Name: Ersin
+// Class: 27
 
 // JavaScript1
 
@@ -94,17 +94,16 @@ logNumbers(1, 100);
 
       Use the following array: const letters = ['a', 'b', 'c', 'd'];
 */
-/*
 function toNumbers(arr) {
-  const indexArr = arr.map((value, index, array) => {
-    return index + 1;
+  let indexArr = arr.map((value, index) => {
+    return ++index;
   });
+  console.log(indexArr);
   return indexArr;
 }
 const letters = ['a', 'b', 'c', 'd'];
 
-console.log(toNumbers(letters));
-*/
+toNumbers(letters);
 
 /* 4. Create a function, called injectBooksToDOM, that:
       - Takes 1 argument: an array of objects
