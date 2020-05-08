@@ -61,24 +61,22 @@ logObj(newObj);
       Use the following values: 1 (start number) and 100 (end number)
 */
 
-/*
-function logNumbers(startN, endN) {
-  for (let i = startN; i <= endN; i++) {
-    if (i % 15 === 0) {
-      console.log('FizzBuzz');
-    } else if (i % 5 === 0) {
-      console.log('Buzz');
+function logNumbers(startNumber, endNumber) {
+  let numberString;
+  for (let i = startNumber; i <= endNumber; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      numberString = 'FizzBuzz';
     } else if (i % 3 === 0) {
-      console.log('Fizz');
+      numberString = 'Fizz';
+    } else if (i % 5 === 0) {
+      numberString = 'Buzz';
+    } else {
+      numberString = i;
     }
-
-    console.log(i);
-
+    console.log(numberString);
   }
 }
-logNumbers(1, 15);
-
-*/
+logNumbers(1, 100);
 
 
 // JavaScript2
